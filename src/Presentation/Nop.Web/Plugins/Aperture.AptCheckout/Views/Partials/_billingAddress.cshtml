@@ -1,0 +1,35 @@
+﻿@model Nop.Web.Models.Checkout.CheckoutBillingAddressModel
+
+
+<div>
+    @await Component.InvokeAsync("Widget", new { widgetZone = "checkout_billing_address_top" })
+
+
+    @if (Model.ShipToSameAddressAllowed)
+    {
+    }
+
+    @await Component.InvokeAsync("Widget", new { widgetZone = "op_checkout_billing_address_middle" })
+
+    @if (Model.ExistingAddresses.Count > 0)
+    {
+        <div id="_aptStoredBillingAddresses">
+            @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_billingStoredAddresses.cshtml", Model)
+        </div>
+    }
+    else
+    {
+
+        @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_CreateOrUpdateAddress.cshtml", Model.BillingNewAddress)
+    }
+
+
+    @await Component.InvokeAsync("Widget", new { widgetZone = "checkout_billing_address_bottom" })
+
+</div>
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+﻿@using Aperture.Plugin.AptCheckout.Extensions
+@model Nop.Web.Models.Common.AddressModel
+
+@{
+    var isBilling = Model.GetCustomProperty<bool>("IsBilling");
+    var modalId = "_aptStored" + (isBilling ? "Billing" : "Shipping") + "Addr" + (Model.Id);
+    var selected = Model.GetCustomProperty<bool>("Selected");
+}
+<div class="storedAddress col-md-3 @(selected ? "_aptSelected" : "")" data-id="@Model.Id">
+    <div class="pull-right">
+        <a class="_aptOpenAddrModal" data-modalid="@modalId">Edit</a>
+    </div>
+    <div>
+        @Model.FirstName @Model.LastName
+    </div>
+
+    <div>
+        @if (Model.StreetAddressEnabled && !string.IsNullOrEmpty(Model.Address1))
+        {
+            @Model.Address1
+            @(Model.Address2 ?? string.Empty)
+        }
+    </div>
+    <div>
+        @if (Model.CityEnabled && !string.IsNullOrEmpty(Model.City))
+        {
+            @Model.City
+        }
+        @if (Model.StateProvinceEnabled && !string.IsNullOrEmpty(Model.StateProvinceName))
+        {
+            @(Model.StateProvinceName)@:,
+        }
+        @if (Model.ZipPostalCodeEnabled && !string.IsNullOrEmpty(Model.ZipPostalCode))
+        {
+            @Model.ZipPostalCode
+        }
+    </div>
+    <div>
+        @if (Model.CountryEnabled && !string.IsNullOrWhiteSpace(Model.CountryName))
+        {
+            @Model.CountryName
+        }
+    </div>
+
+    <div class="remodal twbs @modalId" 
+         data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+
+
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1 class="titleText">Address update</h1>
+        <span>Update address information using the form below</span>  @*//APT TODO STRING RESOURCE*@
+        <br />
+        <br />
+
+
+        <div id="" style="display: none" class="alert fade in alert-dismissable">
+            <span class="feedbackMessage"></span>
+            <a href="#" class="close alert-close" title="close">×</a>
+        </div>
+
+        <div>
+
+            @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_CreateOrUpdateAddress.cshtml", Model)
+
+        </div>
+
+        <div class="pull-right" style="margin-top: 20px">
+            <button data-remodal-action="close" class="remodal-cancel button-1">CANCEL</button>
+            <button class="remodal-confirm button-1 _aptAddrCommit" style="text-transform: uppercase" data-modalid="@modalId" >SAVE</button>@*data-addrid='@Model.Id'*@
+        </div>
+        @* <div style="clear: both"></div>*@
+
+        <input type="hidden" name="Id" value="@Model.Id" />
+
+    </div>
+
+</div>
+
+

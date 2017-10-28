@@ -1,0 +1,37 @@
+﻿@model Nop.Web.Models.ShoppingCart.OrderTotalsModel
+
+<div class="_aptOrderSummaryHeader">
+    <strong class="">Summary</strong>
+</div>
+<ul>
+    <li>
+        <span class="_aptOrderSummaryLabel">Subtotal</span>
+        <span class="_aptOrderSummaryValue">@Model.SubTotal</span>
+    </li>
+    <li>
+        <span class="_aptOrderSummaryLabel">Shipping</span>
+        <span class="_aptOrderSummaryValue">@Model.Shipping</span>
+    </li>
+
+    @if (!string.IsNullOrEmpty(Model.OrderTotalDiscount))
+    {
+        <li>
+            <span class="_aptOrderSummaryLabel">Discount</span>
+            <span class="_aptOrderSummaryValue">@Model.OrderTotalDiscount</span>
+        </li>
+    }
+    <li>
+        <span class="_aptOrderSummaryLabel">Tax</span>
+        <span class="_aptOrderSummaryValue">@Model.Tax</span>
+    </li>
+
+
+
+</ul>
+
+<div class="_aptOrderTotal">
+
+    <span class="_aptOrderSummaryLabel"><strong>Total</strong></span>
+    <span class="_aptOrderSummaryValue">@Model.OrderTotal</span>
+
+</div>

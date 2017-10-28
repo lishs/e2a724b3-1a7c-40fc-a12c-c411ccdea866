@@ -1,0 +1,115 @@
+﻿@using Nop.Web.Framework.UI
+@using Nop.Web.Models.Common
+@model Nop.Web.Models.Checkout.OnePageCheckoutModel
+@{
+Html.AddCssFileParts("~/Plugins/Aperture.AptCheckout/Content/AptCheckoutStyles.css");  @*APT TODO TODO TODO :D*@
+Html.AddCssFileParts("~/Plugins/Aperture.AptCheckout/Content/bootstrap/bootstrap.css");
+Html.AddCssFileParts("~/Plugins/Aperture.AptCheckout/Content/remodal/remodal.css");
+Html.AddCssFileParts("~/Plugins/Aperture.AptCheckout/Content/remodal/remodal-default-theme.css");
+Html.AddScriptParts("~/Plugins/Aperture.AptCheckout/Content/bootstrap/alert.js");
+Html.AddScriptParts("~/Plugins/Aperture.AptCheckout/Content/remodal/remodal.js");
+Html.AddScriptParts("~/Plugins/Aperture.AptCheckout/Scripts/aptCheckoutMgr.js");
+Html.AddScriptParts("~/Plugins/Aperture.AptCheckout/Scripts/Libraries/jquery.ba.throttle-debounce.js");
+
+Layout = "~/Views/Shared/_ColumnsOne.cshtml";
+}
+
+
+
+
+<div class="twbs" id="_aptCheckoutWrapper">
+    
+    <div class="row">
+        <div class="col-lg-12">
+        <h2>Checkout</h2>
+        <hr class="shadow"/>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+         
+        <div class="col-lg-9">
+
+            <div id="_aptBillingAddress" class="_aptAddrWrapper">
+                <h4>@T("Checkout.BillingAddress")</h4>
+                <hr class="noShadow"/>
+                <div class="_aptAddr">
+                    @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_billingAddress.cshtml", Model.BillingAddress)
+                </div>
+
+            </div>
+
+            <div id="_aptShippingAddress" class="_aptAddrWrapper">
+                <h4>@T("Checkout.ShippingAddress")</h4>
+                <hr class="noShadow" />
+                <div class="_aptAddr">
+                    @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_shippingAddress.cshtml", Model.CustomProperties["ShippingAddress"])
+                </div>
+            </div> 
+        </div>
+        <div class="col-lg-3">
+            <div id="_aptOrderSummary" class="shadow">
+                @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_orderSummary.cshtml", Model.CustomProperties["OrderSummary"])
+            </div>
+        </div>
+        @*<div id="_aptOrderSummary">
+
+            </div>
+
+            <div id="_aptCheckoutAttributes">
+
+            </div>
+
+            <div id="_aptOrderTotals">
+
+            </div>*@
+    </div>
+</div>
+
+<div class="remodal twbs" id="alertModal"
+     data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+
+
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h1 class="titleText">Address Add</h1>
+    <span>Add address information using the form below</span>  @*//APT TODO STRING RESOURCE*@
+    <br />
+    <br />
+
+
+    <div id="" style="display: none" class="alert fade in alert-dismissable">
+        <span class="feedbackMessage"></span>
+        <a href="#" class="close alert-close" title="close">×</a>
+    </div>
+
+   
+
+    <div class="pull-right" style="margin-top: 20px">
+        <button data-remodal-action="close" class="remodal-cancel button-1">CANCEL</button>
+        <button class="remodal-confirm button-1 _aptAddrCommit" style="text-transform: uppercase" data-modalid="newAddrModal">SAVE</button>@*data-addrid='@Model.Id'*@
+    </div>
+    @* <div style="clear: both"></div>*@
+
+    <input type="hidden" name="Id" value="0" />
+
+</div>
+
+
+
+
+<script>
+    $(document).ready(function() {
+        aptCheckoutMgr.init();
+    });
+</script>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Checkout",
+  "FriendlyName": "Apt Checkout",
+  "SystemName": "Aperture.AptCheckout",
+  "Version": ".1",
+  "SupportedVersions": [ "4.00" ],
+  "Author": "Aperture labs",
+  "DisplayOrder": 1,
+  "FileName": "Aperture.Plugin.AptCheckout.dll",
+  "Description": "This plugin enables Apt Checkout"
+}

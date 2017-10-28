@@ -1,0 +1,55 @@
+﻿ @model Nop.Web.Models.Checkout.CheckoutBillingAddressModel
+
+<div>
+    @*<label for="billing-address-select">@T("Checkout.SelectBillingAddressOrEnterNewOne")</label>*@
+    <div class="storedAddresses row">
+
+        @foreach (var address in Model.ExistingAddresses)
+        {
+            // address.CustomProperties["IsBilling"] = isBilling;
+            //    address.AvailableCountries = (IList<SelectListItem>)ViewData["AvailableCountries"];
+            @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_storedAddress.cshtml", address)
+        }
+        
+        <div class="col-md-3">
+            <a href="javascript:;" data-modalid="newAddrModal" class="_aptOpenEditModal">+ new address</a> 
+        </div>
+
+          
+        <div class="remodal twbs newAddrModal" id="" 
+             data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+
+
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <h1 class="titleText">Address Add</h1>
+            <span>Add address information using the form below</span>  @*//APT TODO STRING RESOURCE*@
+            <br />
+            <br />
+
+
+            <div id="" style="display: none" class="alert fade in alert-dismissable">
+                <span class="feedbackMessage"></span>
+                <a href="#" class="close alert-close" title="close">×</a>
+            </div>
+
+            <div>
+
+                @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_CreateOrUpdateAddress.cshtml", Model.BillingNewAddress)
+
+            </div>
+
+            <div class="pull-right" style="margin-top: 20px">
+                <button data-remodal-action="close" class="remodal-cancel button-1">CANCEL</button>
+                <button class="remodal-confirm button-1 _aptAddrCommit" style="text-transform: uppercase" data-modalid="newAddrModal" >SAVE</button>@*data-addrid='@Model.Id'*@
+            </div>
+            @* <div style="clear: both"></div>*@
+
+            <input type="hidden" name="Id" value="0" />
+
+        </div>
+
+        @*<option value="" selected="@Model.NewAddressPreselected">@T("Checkout.NewAddress")</option>*@
+
+    </div>
+</div>
+

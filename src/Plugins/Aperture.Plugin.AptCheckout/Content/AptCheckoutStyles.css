@@ -1,0 +1,100 @@
+﻿
+#_aptCheckoutWrapper .required {
+    vertical-align: middle !important;
+}
+
+
+#_aptCheckoutWrapper .form-control {
+    height: 38px !important;
+}
+
+
+
+hr.noShadow {
+    border-color: lightgray !important;
+    margin-top: 0px !important;
+    margin-bottom:0px !important
+}
+
+hr.shadow {
+    border: none !important;
+    height: 20px !important;
+    /*width: 90% ;*/
+    height: 50px !important;
+    margin-top: 0 !important;
+    border-bottom: 1px solid #1f1209 !important;
+    box-shadow: 0 20px 20px -20px #9c9c9c !important;
+    margin: -50px auto 10px !important;
+}
+
+#_aptCheckoutWrapper .required {
+    vertical-align: middle !important;
+}
+
+
+._aptOrderSummaryHeader {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+._aptOrderSummaryLabel {
+    text-align: left;
+}
+
+._aptOrderSummaryValue {
+    float: right;
+    text-align: right;
+}
+
+#_aptOrderSummary {
+    padding: 15px;
+    /*border: 1px solid lightgray;*/
+} 
+
+#_aptOrderSummary li {
+    padding: 5px;
+}
+
+    #_aptOrderSummary ._aptOrderTotal {
+        border-top: 1px solid lightgray;
+        padding-top: 10px;
+    }
+
+
+._aptAddr {
+    padding-top: 10px;
+}
+
+
+#_aptCheckoutWrapper .orderTotalsFixed {
+    position: fixed;
+    top: 20px;
+}
+
+
+div.shadow {
+    -webkit-box-shadow: 10px 10px 24px 0px rgba(235,235,235,1);
+    -moz-box-shadow: 10px 10px 24px 0px rgba(235,235,235,1);
+    box-shadow: 10px 10px 24px 0px rgba(235,235,235,1);
+}
+
+
+.storedAddress {
+    padding: 10px;
+    margin: 5px;
+    /*border: 1px solid lightgray;*/
+    cursor: pointer;
+
+}
+
+._aptSelected {
+    -webkit-box-shadow: 10px 10px 24px 0px rgba(235,235,235,1);
+    -moz-box-shadow: 10px 10px 24px 0px rgba(235,235,235,1);
+    box-shadow: 10px 10px 24px 0px rgba(235,235,235,1);
+}
+
+#_aptOrderSummary {
+    background-color: white;
+}

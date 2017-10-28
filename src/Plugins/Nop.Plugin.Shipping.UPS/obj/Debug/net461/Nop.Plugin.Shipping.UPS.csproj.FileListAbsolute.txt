@@ -1,0 +1,12 @@
+C:\Projects\nop_latest\src\Presentation\Nop.Web\Plugins\Shipping.UPS\plugin.json
+C:\Projects\nop_latest\src\Presentation\Nop.Web\Plugins\Shipping.UPS\Views\Configure.cshtml
+C:\Projects\nop_latest\src\Presentation\Nop.Web\Plugins\Shipping.UPS\Views\_ViewImports.cshtml
+C:\Projects\nop_latest\src\Presentation\Nop.Web\Plugins\Shipping.UPS\logo.jpg
+C:\Projects\nop_latest\src\Presentation\Nop.Web\Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.dll
+C:\Projects\nop_latest\src\Presentation\Nop.Web\Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.pdb
+C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Debug\net461\Nop.Plugin.Shipping.UPS.csprojResolveAssemblyReference.cache
+C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Debug\net461\Nop.Plugin.Shipping.UPS.csproj.CoreCompileInputs.cache
+C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Debug\net461\Nop.Plugin.Shipping.UPS.AssemblyInfoInputs.cache
+C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Debug\net461\Nop.Plugin.Shipping.UPS.AssemblyInfo.cs
+C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Debug\net461\Nop.Plugin.Shipping.UPS.dll
+C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Shipping.UPS\obj\Debug\net461\Nop.Plugin.Shipping.UPS.pdb

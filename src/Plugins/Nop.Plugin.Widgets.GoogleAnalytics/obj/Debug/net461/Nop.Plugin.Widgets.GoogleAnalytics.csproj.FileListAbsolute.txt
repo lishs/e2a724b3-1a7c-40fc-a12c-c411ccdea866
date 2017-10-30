@@ -10,3 +10,15 @@ C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\net461\Nop.Plugin.Widgets.GoogleAnalytics.AssemblyInfo.cs
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\net461\Nop.Plugin.Widgets.GoogleAnalytics.dll
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\net461\Nop.Plugin.Widgets.GoogleAnalytics.pdb
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\plugin.json
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Views\Configure.cshtml
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Views\PublicInfo.cshtml
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Views\_ViewImports.cshtml
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\logo.jpg
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Nop.Plugin.Widgets.GoogleAnalytics.dll
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Nop.Plugin.Widgets.GoogleAnalytics.pdb
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\net461\Nop.Plugin.Widgets.GoogleAnalytics.csproj.CoreCompileInputs.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\net461\Nop.Plugin.Widgets.GoogleAnalytics.AssemblyInfoInputs.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\net461\Nop.Plugin.Widgets.GoogleAnalytics.AssemblyInfo.cs
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\net461\Nop.Plugin.Widgets.GoogleAnalytics.dll
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Debug\net461\Nop.Plugin.Widgets.GoogleAnalytics.pdb

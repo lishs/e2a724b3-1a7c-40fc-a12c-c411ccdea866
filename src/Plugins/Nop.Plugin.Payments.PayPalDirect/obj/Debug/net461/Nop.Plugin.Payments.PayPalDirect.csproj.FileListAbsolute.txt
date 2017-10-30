@@ -11,3 +11,16 @@ C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\ne
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\net461\Nop.Plugin.Payments.PayPalDirect.AssemblyInfo.cs
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\net461\Nop.Plugin.Payments.PayPalDirect.dll
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\net461\Nop.Plugin.Payments.PayPalDirect.pdb
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\plugin.json
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Views\Configure.cshtml
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Views\PaymentInfo.cshtml
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Views\_ViewImports.cshtml
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\logo.jpg
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Nop.Plugin.Payments.PayPalDirect.dll
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.PayPalDirect\Nop.Plugin.Payments.PayPalDirect.pdb
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\net461\Nop.Plugin.Payments.PayPalDirect.csprojResolveAssemblyReference.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\net461\Nop.Plugin.Payments.PayPalDirect.csproj.CoreCompileInputs.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\net461\Nop.Plugin.Payments.PayPalDirect.AssemblyInfoInputs.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\net461\Nop.Plugin.Payments.PayPalDirect.AssemblyInfo.cs
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\net461\Nop.Plugin.Payments.PayPalDirect.dll
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.PayPalDirect\obj\Debug\net461\Nop.Plugin.Payments.PayPalDirect.pdb

@@ -10,3 +10,15 @@ C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.AssemblyInfo.cs
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.dll
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.pdb
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\plugin.json
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Views\Configure.cshtml
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Views\PaymentInfo.cshtml
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Views\_ViewImports.cshtml
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\logo.jpg
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Nop.Plugin.Payments.CheckMoneyOrder.dll
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Nop.Plugin.Payments.CheckMoneyOrder.pdb
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.csproj.CoreCompileInputs.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.AssemblyInfoInputs.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.AssemblyInfo.cs
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.dll
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.pdb

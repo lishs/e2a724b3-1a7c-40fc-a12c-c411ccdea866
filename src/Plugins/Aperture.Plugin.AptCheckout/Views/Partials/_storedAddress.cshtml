@@ -6,43 +6,42 @@
     var modalId = "_aptStored" + (isBilling ? "Billing" : "Shipping") + "Addr" + (Model.Id);
     var selected = Model.GetCustomProperty<bool>("Selected");
 }
-<div class="storedAddress col-md-3 @(selected ? "_aptSelected" : "")" data-id="@Model.Id">
-    <div class="pull-right">
-        <a class="_aptOpenAddrModal" data-modalid="@modalId">Edit</a>
-    </div>
+
+<div class="col-md-3 _aptStoredAddress @(selected ? "_aptSelected" : "")" data-id="@Model.Id" data-isbilling="@(isBilling.ToString().ToLower())">
+
     <div>
         @Model.FirstName @Model.LastName
     </div>
 
     <div>
         @if (Model.StreetAddressEnabled && !string.IsNullOrEmpty(Model.Address1))
-        {
+            {
             @Model.Address1
             @(Model.Address2 ?? string.Empty)
         }
     </div>
     <div>
         @if (Model.CityEnabled && !string.IsNullOrEmpty(Model.City))
-        {
+            {
             @Model.City
         }
         @if (Model.StateProvinceEnabled && !string.IsNullOrEmpty(Model.StateProvinceName))
-        {
+            {
             @(Model.StateProvinceName)@:,
         }
         @if (Model.ZipPostalCodeEnabled && !string.IsNullOrEmpty(Model.ZipPostalCode))
-        {
+            {
             @Model.ZipPostalCode
         }
     </div>
     <div>
         @if (Model.CountryEnabled && !string.IsNullOrWhiteSpace(Model.CountryName))
-        {
+            {
             @Model.CountryName
         }
     </div>
 
-    <div class="remodal twbs @modalId" 
+    <div class="remodal twbs @modalId"
          data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
 
 
@@ -66,7 +65,7 @@
 
         <div class="pull-right" style="margin-top: 20px">
             <button data-remodal-action="close" class="remodal-cancel button-1">CANCEL</button>
-            <button class="remodal-confirm button-1 _aptAddrCommit" style="text-transform: uppercase" data-modalid="@modalId" >SAVE</button>@*data-addrid='@Model.Id'*@
+            <button class="remodal-confirm button-1 _aptAddrCommit" style="text-transform: uppercase" data-modalid="@modalId">SAVE</button>@*data-addrid='@Model.Id'*@
         </div>
         @* <div style="clear: both"></div>*@
 
@@ -74,6 +73,9 @@
 
     </div>
 
+    <div class="pull-right">
+        <button type="button" class="_aptOpenAddrModal btn btn-xs btn-dark" data-modalid="@modalId">Edit</button>
+
+    </div>
+
 </div>
-
-

@@ -33,7 +33,7 @@ Layout = "~/Views/Shared/_ColumnsOne.cshtml";
         <div class="col-lg-9">
 
             <div id="_aptBillingAddress" class="_aptAddrWrapper">
-                <h4>@T("Checkout.BillingAddress")</h4>
+                <h4>@T("AptCheckout.BillingAddress")</h4>
                 <hr class="noShadow"/>
                 <div class="_aptAddr">
                     @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_billingAddress.cshtml", Model.BillingAddress)
@@ -42,12 +42,29 @@ Layout = "~/Views/Shared/_ColumnsOne.cshtml";
             </div>
 
             <div id="_aptShippingAddress" class="_aptAddrWrapper">
-                <h4>@T("Checkout.ShippingAddress")</h4>
+                <h4>@T("AptCheckout.ShippingAddress")</h4>
                 <hr class="noShadow" />
                 <div class="_aptAddr">
                     @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_shippingAddress.cshtml", Model.CustomProperties["ShippingAddress"])
                 </div>
             </div> 
+            
+            <div id="_aptShippingMethods" class="_aptAddrWrapper">
+                <h4>@T("AptCheckout.ShippingMethods")</h4>
+                <hr class="noShadow" />
+                <div class="_aptAddr">
+                    @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_shippingMethods.cshtml", Model.CustomProperties["ShippingMethods"])
+                </div>
+            </div> 
+            
+            <div id="_aptPaymentMethods" class="_aptAddrWrapper">
+                <h4>@T("AptCheckout.PaymentMethods")</h4>
+                <hr class="noShadow" />
+                <div class="_aptAddr">
+                    @Html.Partial("~/Plugins/Aperture.AptCheckout/Views/Partials/_paymentMethods.cshtml", Model.CustomProperties["PaymentMethods"])
+                </div>
+            </div> 
+
         </div>
         <div class="col-lg-3">
             <div id="_aptOrderSummary" class="shadow">

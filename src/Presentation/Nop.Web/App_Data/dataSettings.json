@@ -1,5 +1,5 @@
 {
   "DataProvider": "sqlserver",
-  "DataConnectionString": "Data Source=APERTURE-PC\\SQLEXPRESS;Initial Catalog=nop_repo;Integrated Security=True;Persist Security Info=False",
+  "DataConnectionString": "Data Source=GENERAL\\SQLEXPRESS;Initial Catalog=nop_40_git;Integrated Security=True;Persist Security Info=False",
   "RawDataSettings": {}
 }

@@ -11,6 +11,7 @@ using Nop.Core.Infrastructure;
 using Nop.Services.Catalog;
 using Nop.Services.Common;
 using Nop.Services.Directory;
+using Nop.Services.Discounts;
 using Nop.Services.Localization;
 using Nop.Services.Orders;
 using Nop.Services.Payments;
@@ -133,6 +134,7 @@ namespace Aperture.Plugin.AptCheckout.Factories
 
             //new address
             model.BillingNewAddress.CountryId = selectedCountryId;
+            model.BillingNewAddress.CustomProperties["IsBilling"] = true;
             _addressModelFactory.PrepareAddressModel(model.BillingNewAddress,
                 address: null,
                 excludeProperties: false,
@@ -248,6 +250,7 @@ namespace Aperture.Plugin.AptCheckout.Factories
 
             //new address
             model.ShippingNewAddress.CountryId = selectedCountryId;
+            model.ShippingNewAddress.CustomProperties["IsBilling"] = false;
             _addressModelFactory.PrepareAddressModel(model.ShippingNewAddress,
                 address: null,
                 excludeProperties: false,
@@ -275,9 +278,92 @@ namespace Aperture.Plugin.AptCheckout.Factories
             {
                 ShippingRequired = cart.RequiresShipping(_productService, _productAttributeParser),
                 DisableBillingAddressCheckoutStep = _orderSettings.DisableBillingAddressCheckoutStep,
-                BillingAddress = PrepareBillingAddressModel(cart, prePopulateNewAddressWithCustomerFields: true, selectedCountryId: aptCheckoutSettings.DefaultCountryId)
+                BillingAddress = PrepareBillingAddressModel(cart, prePopulateNewAddressWithCustomerFields: true, selectedCountryId: aptCheckoutSettings.DefaultCountryId ?? 1)
             };
             return model;
         }
+
+
+
+        ///// <summary>
+        ///// Prepare shipping method model
+        ///// </summary>
+        ///// <param name="cart">Cart</param>
+        ///// <param name="shippingAddress">Shipping address</param>
+        ///// <returns>Shipping method model</returns>
+        //public override CheckoutShippingMethodModel PrepareShippingMethodModel(IList<ShoppingCartItem> cart, Address shippingAddress)
+        //{
+        //    var model = new CheckoutShippingMethodModel();
+
+        //    var getShippingOptionResponse = _shippingService.GetShippingOptions(cart, shippingAddress, _workContext.CurrentCustomer, storeId: _storeContext.CurrentStore.Id);
+        //    if (getShippingOptionResponse.Success)
+        //    {
+        //        //performance optimization. cache returned shipping options.
+        //        //we'll use them later (after a customer has selected an option).
+        //        _genericAttributeService.SaveAttribute(_workContext.CurrentCustomer,
+        //                                               SystemCustomerAttributeNames.OfferedShippingOptions,
+        //                                               getShippingOptionResponse.ShippingOptions,
+        //                                               _storeContext.CurrentStore.Id);
+
+        //        foreach (var shippingOption in getShippingOptionResponse.ShippingOptions)
+        //        {
+        //            var soModel = new CheckoutShippingMethodModel.ShippingMethodModel
+        //            {
+        //                Name = shippingOption.Name,
+        //                Description = shippingOption.Description,
+        //                ShippingRateComputationMethodSystemName = shippingOption.ShippingRateComputationMethodSystemName,
+        //                ShippingOption = shippingOption,
+        //            };
+
+        //            //adjust rate
+        //            var shippingTotal = _orderTotalCalculationService.AdjustShippingRate(shippingOption.Rate, cart, out List<DiscountForCaching> _);
+
+        //            var rateBase = _taxService.GetShippingPrice(shippingTotal, _workContext.CurrentCustomer);
+        //            var rate = _currencyService.ConvertFromPrimaryStoreCurrency(rateBase, _workContext.WorkingCurrency);
+        //            soModel.Fee = _priceFormatter.FormatShippingPrice(rate, true);
+
+        //            model.ShippingMethods.Add(soModel);
+        //        }
+
+        //        //find a selected (previously) shipping method
+        //        var selectedShippingOption = _workContext.CurrentCustomer.GetAttribute<ShippingOption>(
+        //                SystemCustomerAttributeNames.SelectedShippingOption, _storeContext.CurrentStore.Id);
+        //        if (selectedShippingOption != null)
+        //        {
+        //            var shippingOptionToSelect = model.ShippingMethods.ToList()
+        //                .Find(so =>
+        //                   !string.IsNullOrEmpty(so.Name) &&
+        //                   so.Name.Equals(selectedShippingOption.Name, StringComparison.InvariantCultureIgnoreCase) &&
+        //                   !string.IsNullOrEmpty(so.ShippingRateComputationMethodSystemName) &&
+        //                   so.ShippingRateComputationMethodSystemName.Equals(selectedShippingOption.ShippingRateComputationMethodSystemName, StringComparison.InvariantCultureIgnoreCase));
+        //            if (shippingOptionToSelect != null)
+        //            {
+        //                shippingOptionToSelect.Selected = true;
+        //            }
+        //        }
+        //        //if no option has been selected, let's do it for the first one
+        //        if (model.ShippingMethods.FirstOrDefault(so => so.Selected) == null)
+        //        {
+        //            var shippingOptionToSelect = model.ShippingMethods.FirstOrDefault();
+        //            if (shippingOptionToSelect != null)
+        //            {
+        //                shippingOptionToSelect.Selected = true;
+        //            }
+        //        }
+
+        //        //notify about shipping from multiple locations
+        //        if (_shippingSettings.NotifyCustomerAboutShippingFromMultipleLocations)
+        //        {
+        //            model.NotifyCustomerAboutShippingFromMultipleLocations = getShippingOptionResponse.ShippingFromMultipleLocations;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        foreach (var error in getShippingOptionResponse.Errors)
+        //            model.Warnings.Add(error);
+        //    }
+
+        //    return model;
+        //}
     }
 }

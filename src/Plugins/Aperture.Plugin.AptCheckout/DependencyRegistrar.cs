@@ -13,6 +13,7 @@ namespace Aperture.Plugin.AptCheckout
         {
             //throw new NotImplementedException();
             builder.RegisterType<CustomCheckoutModelFactory>().As<ICheckoutModelFactory>();
+           // builder.RegisterType<CustomShoppingCartModelFactory>().As<IShoppingCartModelFactory>();
         }
 
         public int Order => 100;

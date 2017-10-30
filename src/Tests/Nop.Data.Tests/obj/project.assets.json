@@ -6631,11 +6631,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Tests\\Nop.Data.Tests\\Nop.Data.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Tests\\Nop.Data.Tests\\Nop.Data.Tests.csproj",
       "projectName": "Nop.Data.Tests",
-      "projectPath": "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Tests\\Nop.Data.Tests\\Nop.Data.Tests.csproj",
+      "projectPath": "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Tests\\Nop.Data.Tests\\Nop.Data.Tests.csproj",
       "packagesPath": "C:\\Users\\adam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Tests\\Nop.Data.Tests\\obj\\",
+      "outputPath": "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Tests\\Nop.Data.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6649,17 +6649,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nuget.episerver.com/feed/packages.svc": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Tests\\Nop.Tests\\Nop.Tests.csproj": {
-              "projectPath": "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Tests\\Nop.Tests\\Nop.Tests.csproj"
+            "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Tests\\Nop.Tests\\Nop.Tests.csproj": {
+              "projectPath": "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Tests\\Nop.Tests\\Nop.Tests.csproj"
             },
-            "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-              "projectPath": "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+            "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+              "projectPath": "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
             }
           }
         }

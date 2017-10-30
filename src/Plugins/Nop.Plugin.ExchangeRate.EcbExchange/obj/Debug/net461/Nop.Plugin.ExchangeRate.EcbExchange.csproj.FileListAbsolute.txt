@@ -8,3 +8,13 @@ C:\Projects\nop_latest\src\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\net461\Nop.Plugin.ExchangeRate.EcbExchange.dll
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\net461\Nop.Plugin.ExchangeRate.EcbExchange.pdb
 C:\Projects\nop_latest\src\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\net461\Nop.Plugin.ExchangeRate.EcbExchange.csprojResolveAssemblyReference.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\ExchangeRate.EcbExchange\plugin.json
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\ExchangeRate.EcbExchange\logo.jpg
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\ExchangeRate.EcbExchange\Nop.Plugin.ExchangeRate.EcbExchange.dll
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Presentation\Nop.Web\Plugins\ExchangeRate.EcbExchange\Nop.Plugin.ExchangeRate.EcbExchange.pdb
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\net461\Nop.Plugin.ExchangeRate.EcbExchange.csprojResolveAssemblyReference.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\net461\Nop.Plugin.ExchangeRate.EcbExchange.csproj.CoreCompileInputs.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\net461\Nop.Plugin.ExchangeRate.EcbExchange.AssemblyInfoInputs.cache
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\net461\Nop.Plugin.ExchangeRate.EcbExchange.AssemblyInfo.cs
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\net461\Nop.Plugin.ExchangeRate.EcbExchange.dll
+C:\Users\adam\Source\Repos\e2a724b3-1a7c-40fc-a12c-c411ccdea866\src\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\net461\Nop.Plugin.ExchangeRate.EcbExchange.pdb

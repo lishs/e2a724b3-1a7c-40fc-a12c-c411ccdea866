@@ -1,4 +1,5 @@
-﻿@model Nop.Web.Models.Common.AddressModel
+﻿@using Aperture.Plugin.AptCheckout.Extensions
+@model Nop.Web.Models.Common.AddressModel
 
 @{
     var isNewAddress = Model.Id == 0; //if new address, model id wll be 0, we'll want to fit display to modal
@@ -45,6 +46,7 @@
 {
 
     <input asp-for="Id" type="hidden"/>
+    <input type="hidden" name="IsBilling" value="@(Model.GetCustomProperty<bool>("IsBilling"))" />
 
     <div class="row">
         <div class="form-group col-lg-4">

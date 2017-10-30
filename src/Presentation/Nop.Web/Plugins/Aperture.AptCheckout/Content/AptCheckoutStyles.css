@@ -9,6 +9,10 @@
 }
 
 
+#_aptCheckoutWrapper .preselected {
+    border: 1px solid lightgray;
+}
+
 
 hr.noShadow {
     border-color: lightgray !important;
@@ -81,20 +85,74 @@ div.shadow {
 }
 
 
-.storedAddress {
+._aptStoredAddress {
     padding: 10px;
     margin: 5px;
     /*border: 1px solid lightgray;*/
     cursor: pointer;
-
 }
 
 ._aptSelected {
     -webkit-box-shadow: 10px 10px 24px 0px rgba(235,235,235,1);
     -moz-box-shadow: 10px 10px 24px 0px rgba(235,235,235,1);
     box-shadow: 10px 10px 24px 0px rgba(235,235,235,1);
+    transition: all 0.3s ease;
+    border: 1px solid lightgray;
 }
 
 #_aptOrderSummary {
     background-color: white;
+    border: 1px solid lightgray;
+}
+
+.method-name label, .method-name input {
+    cursor: pointer;
+}
+
+
+.loading-spinner {
+    opacity: 0.4;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-image: url(img/loader.gif);
+
+}
+
+/*loading element*/
+.loading-overlay {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11000;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: 600;
+    color: #777;
+}
+
+    .vertical-center .fa {
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+
+._aptPaymentMethodWrap {
+    display: block !important;
 }

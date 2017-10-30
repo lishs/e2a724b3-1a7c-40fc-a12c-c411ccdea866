@@ -7990,11 +7990,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Plugins\\Nop.Plugin.Payments.Square\\Nop.Plugin.Payments.Square.csproj",
+      "projectUniqueName": "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Plugins\\Nop.Plugin.Payments.Square\\Nop.Plugin.Payments.Square.csproj",
       "projectName": "Nop.Plugin.Payments.Square",
-      "projectPath": "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Plugins\\Nop.Plugin.Payments.Square\\Nop.Plugin.Payments.Square.csproj",
+      "projectPath": "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Plugins\\Nop.Plugin.Payments.Square\\Nop.Plugin.Payments.Square.csproj",
       "packagesPath": "C:\\Users\\adam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Plugins\\Nop.Plugin.Payments.Square\\obj\\",
+      "outputPath": "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Plugins\\Nop.Plugin.Payments.Square\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8008,14 +8008,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nuget.episerver.com/feed/packages.svc": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-              "projectPath": "C:\\Users\\adam\\Source\\repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+            "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+              "projectPath": "C:\\Users\\adam\\Source\\Repos\\e2a724b3-1a7c-40fc-a12c-c411ccdea866\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
             }
           }
         }

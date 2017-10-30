@@ -14,6 +14,7 @@
   </PropertyGroup>
   
   <ItemGroup>
+    <None Remove="Content\img\loader.gif" />
     <None Remove="logo.jpg" />
     <None Remove="plugin.json" />
     <None Remove="Views\Configure.cshtml" />
@@ -21,7 +22,9 @@
     <None Remove="Views\Partials\_billingStoredAddresses.cshtml" />
     <None Remove="Views\Partials\_CreateOrUpdateAddress.cshtml" />
     <None Remove="Views\Partials\_orderSummary.cshtml" />
-    <None Remove="Views\Partials\_shippingAddress.cshtml" />
+    <None Remove="Views\Partials\_paymentInfo.cshtml" />
+    <None Remove="Views\Partials\_paymentMethods.cshtml" />
+    <None Remove="Views\Partials\_shippingMethods.cshtml" />
     <None Remove="Views\Partials\_shippingStoredAddresses.cshtml" />
     <None Remove="Views\Partials\_storedAddress.cshtml" />
     <None Remove="Views\_ViewImports.cshtml" />
@@ -50,6 +53,9 @@
     <Content Include="Content\bootstrap\button.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\img\loader.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="logo.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -71,7 +77,16 @@
     <Content Include="Views\Partials\_orderSummary.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Views\Partials\_paymentInfo.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Partials\_paymentMethods.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Partials\_shippingAddress.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Partials\_shippingMethods.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Views\Partials\_shippingStoredAddresses.cshtml">

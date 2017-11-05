@@ -37,10 +37,10 @@
                         paymentMethodName = T("Checkout.SelectPaymentMethod.MethodAndFee", paymentMethodName, paymentMethod.Fee).Text;
                     }
                     <li class="_aptPaymentMethodWrap">
-                        <div class="method-name">
+                        <div class="method-name" @(paymentMethod.Selected && string.IsNullOrEmpty(paymentMethod.LogoUrl) ? "_aptSelected" : "")>
                             @if (!string.IsNullOrEmpty(paymentMethod.LogoUrl))
                             {
-                                <div class="payment-logo">
+                                <div class="payment-logo @(paymentMethod.Selected ? "_aptSelected" : "")">
                                     <label for="paymentmethod_@(i)">
                                         <img src="@paymentMethod.LogoUrl" alt="@paymentMethodName" />
                                     </label>

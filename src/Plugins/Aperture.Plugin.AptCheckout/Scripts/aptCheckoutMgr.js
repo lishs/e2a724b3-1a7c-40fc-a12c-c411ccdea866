@@ -75,6 +75,8 @@
 
 
 
+
+
         $(document).on('click', '._aptStoredAddress', function () {
 
             var $item = $(this);
@@ -124,7 +126,8 @@
             var option = $(this).val();
 
             var $wrapper = $(this).closest("._aptShippingMethodWrap");
-            $wrapper.find('.method-name').addClass('preselected');
+            var $item = $wrapper.find('.method-name');
+            $item.addClass('preselected');
 
           //  $("#_aptOrderSummary").loading(true);
             aptCheckoutMgr.updateShippingMethod({
@@ -143,6 +146,41 @@
                 }).always(function () {
               //  $("#_aptOrderSummary").loading(false);
                 $('.method-name').removeClass('preselected');
+            });
+
+        });
+
+        $(document).on('click', '._aptPaymentMethod', function () {
+
+       
+
+            var $form = $(this).closest('form');
+            var $wrapper = $(this).closest("._aptPaymentMethodWrap");
+
+            var $item = $wrapper.find('.payment-logo').length
+                ? $wrapper.find('.payment-logo')
+                : $wrapper.find('.payment-method');
+            
+           $item.addClass('preselected');
+
+            $.ajax({
+                url: '/AptCheckout/PaymentMethod',
+                data: $form.serialize(),
+                type: 'post'
+            }).done(function(response) {
+                $(".payment-method").find('._aptSelected').removeClass("_aptSelected");
+                $item.removeClass('preselected').addClass('_aptSelected');
+                
+                if (response.osm) {
+                    $("#_aptOrderSummary").html(response.osm);
+                }
+
+                Checkout.setStepResponse(response);
+
+            }).fail(function(xhr) {
+
+            }).always(function(xhr) {
+
             });
 
         });

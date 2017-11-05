@@ -373,7 +373,7 @@ namespace Aperture.Plugin.AptCheckout.Controllers
 
 
 
-
+        [HttpPost, ActionName("PaymentMethod")]
         public virtual IActionResult SavePaymentMethod(string paymentmethod, CheckoutPaymentMethodModel model)
         {
             try
@@ -444,6 +444,57 @@ namespace Aperture.Plugin.AptCheckout.Controllers
             }
         }
 
+
+
+        protected override JsonResult OpcLoadStepAfterPaymentMethod(IPaymentMethod paymentMethod, List<ShoppingCartItem> cart)
+        {
+            if (paymentMethod.SkipPaymentInfo ||
+                (paymentMethod.PaymentMethodType == PaymentMethodType.Redirection && _paymentSettings.SkipPaymentInfoStepForRedirectionPaymentMethods))
+            {
+                //skip payment info page
+                var paymentInfo = new ProcessPaymentRequest();
+
+                //session save
+                HttpContext.Session.Set("OrderPaymentInfo", paymentInfo);
+
+                var confirmOrderModel = _checkoutModelFactory.PrepareConfirmOrderModel(cart);
+                return Json(new
+                {
+                    update_section = new UpdateSectionJsonModel
+                    {
+                        name = "confirm-order",
+                        html = RenderPartialViewToString("OpcConfirmOrder", confirmOrderModel)
+                    },
+                    goto_section = "confirm_order"
+                });
+            }
+
+            //return payment info page
+            var paymenInfoModel = _checkoutModelFactory.PreparePaymentInfoModel(paymentMethod);
+
+
+            var orderTotalsModel = _shoppingCartModelFactory.PrepareOrderTotalsModel(cart, false);
+            var orderSummaryMarkup = RenderPartialViewToString("~/Plugins/Aperture.AptCheckout/Views/Partials/_orderSummary.cshtml", orderTotalsModel);
+
+            var paymentInfoMarkup =
+                RenderPartialViewToString("~/Plugins/Aperture.AptCheckout/Views/Partials/_paymentInfo.cshtml",
+                    paymenInfoModel);
+
+            return Json(new
+            {
+                update_section = new UpdateSectionJsonModel
+                {
+                    name = "payment-info",
+                    html = paymentInfoMarkup
+                },
+                //goto_section = "payment_info",
+                osm = orderSummaryMarkup
+            });
+        }
+
+
+
+        [HttpPost, ActionName("PlaceOrder")]
         public virtual IActionResult SavePaymentInfo(IFormCollection form)
         {
             try

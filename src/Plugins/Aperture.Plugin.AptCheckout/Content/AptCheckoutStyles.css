@@ -13,6 +13,9 @@
     border: 1px solid lightgray;
 }
 
+#_aptCheckoutWrapper .payment-method .method-list li {
+    width: 100% !important;
+}
 
 hr.noShadow {
     border-color: lightgray !important;
